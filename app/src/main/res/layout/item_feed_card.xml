@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+        <variable name="article" type="com.vista.vistagram.models.Article"/>
+        <import type="com.vista.vistagram.utils.Utils" />
+    </data>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="2dp"
+        android:layout_margin="8dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="72dp"
+                android:padding="16dp">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:id="@+id/profilePicture" />
+
+                <TextView
+                    android:id="@+id/profileName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/profilePicture"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14sp"
+                    android:text="@{article.author.name}" />
+
+                <TextView
+                    android:id="@+id/creationDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/profileName"
+                    android:layout_below="@id/profileName"
+                    android:layout_marginTop="2dp"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/secondary_text_dark"
+                    android:text="@{Utils.formatRelative(article.createdAt)}" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/contentPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop" />
+
+            <TextView
+                android:id="@+id/body"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:textSize="14sp"
+                android:text="@{article.body}"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</layout>

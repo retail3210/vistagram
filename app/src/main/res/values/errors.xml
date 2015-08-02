@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="error_server_dead">현재 서버 상태가 좋지 않은 것 같습니다. 잠시 후에 다시 시도해주세요.</string>
+    <string name="error_network">네트워크에 연결할 수 없습니다. Wi-Fi 혹은 모바일 네트워크에 연결해주세요.</string>
+    <string name="error_internal_server">서버 에러가 발생했습니다. 잠시 후에 다시 시도해주세요.</string>
+    <string name="error_not_found">서버 에러가 발생했습니다. 구버전의 앱을 쓰고 계신건 아닌가요?</string>
+    <string name="error_old_version">현재 버전에서 지원하지 않는 기능입니다. 최신 버전으로 앱을 업데이트해주세요!</string>
+    <string name="error_auth_failed">로그인이 되어있는지 확인해주세요.</string>
+    <string name="error_auth_expired">마지막으로 로그인한지 너무 오래되어 로그인이 풀려버렸습니다. 다시 로그인해주세요ㅜㅜ</string>
+    <string name="error_perm_denined">접근 불가능한 기능입니다.</string>
+
+    <string name="error_wrong_account">이메일 혹은 패스워드가 잘못되었습니다.</string>
+    <string name="error_duplicate_email">이미 있는 이메일입니다.</string>
+    <string name="error_">이미 있는 이메일입니다.</string>
+</resources>
